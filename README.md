@@ -44,7 +44,7 @@ See the [Examples](./example) for more info and advanced usage.
 
 Build the Examples with `npm install` and then `npm start` to start the development server at [http://localhost:3000](http://localhost:3000).
 
-Or view the online examples at [https://darylbuckle.github.io/react-profile-avatar](https://darylbuckle.github.io/react-profile-avatar).
+Or view the online examples at [https://darylbuckle.github.io/react-profile-avatar/](https://darylbuckle.github.io/react-profile-avatar/).
 
 
 ## Props

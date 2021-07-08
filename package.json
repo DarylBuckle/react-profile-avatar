@@ -17,7 +17,7 @@
     "user",
     "profile"
   ],
-  "homepage": "https://github.com/darylbuckle/react-profile-avatar",
+  "homepage": "https://github.com/darylbuckle/react-profile-avatar/",
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs --css-modules false",
     "start": "microbundle-crl watch --no-compress --format modern,cjs --css-modules false",
