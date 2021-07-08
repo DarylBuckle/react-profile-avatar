@@ -1,7 +1,7 @@
 {
   "name": "react-profile-avatar",
   "version": "1.0.0",
-  "description": "Render a circle user avatar with either initials or an image.",
+  "description": "Render a user avatar with either initials or an image.",
   "author": "DarylBuckle",
   "license": "MIT",
   "repository": "DarylBuckle/react-profile-avatar",
@@ -11,9 +11,16 @@
   "engines": {
     "node": ">=10"
   },
+  "keywords": [
+    "react",
+    "avatar",
+    "user",
+    "profile"
+  ],
+  "homepage": "https://github.com/darylbuckle/react-profile-avatar",
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern,cjs --css-modules false",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs --css-modules false",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
@@ -21,7 +28,8 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "publish": "npm publish"
   },
   "peerDependencies": {
     "react": "^16.0.0"
